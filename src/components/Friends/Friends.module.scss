@@ -1,0 +1,25 @@
+@value mainColor from '../../stylesvariables.module.css'
+
+$bgc: green;
+
+:root {
+  --myFC: rgb(224, 224, 233);
+}
+
+.customBtn {
+  font-size: 2rem;
+  color: mainColor;
+  font-weight: 600;
+}
+
+.userBtn {
+  // background: --myFC;
+  composes: customBtn;
+  &:hover {
+    background-color: yellow;
+  }
+}
+
+h2 {
+  background: yellow;
+}
